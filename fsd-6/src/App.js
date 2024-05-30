@@ -3,6 +3,7 @@ import React,{useState} from "react"
 import './App.css';
 import Counter from "./component/Counter";
 import Toggle from "./component/Toggle";
+import Useeffect from "./component/Useeffect";
 
 
 
@@ -10,7 +11,8 @@ function App() {
   return (
     <div>
       {/* <Counter/> */}
-      <Toggle/>
+      {/* <Toggle/> */}
+      <Useeffect/>
     </div>
   )
 }

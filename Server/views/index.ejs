@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+  <h1 class="h1"> CRUD OPERATION PERFORM</h1>
+
+  <fieldset>
+
+   <% for(let i of comments){ %>
+        <h2> id: <%=i.id %> </h2>
+        <p> name: <%=i.username %></p>
+        <p> comment: <%=i.comment %> </p>
+<a href="/blogs/ <%= i.id %>" >edit</a>
+
+<form action="/blogs/ <%= i.id %>?_method=DELETE" method="POST">
+  <button > DELETE</button>
+</form>
+
+  <%  } %>
+
+</fieldset>
+    
+</body>
+</html>
